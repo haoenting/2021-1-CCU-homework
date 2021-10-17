@@ -10,7 +10,7 @@ int main() {
 	scanf("%d", &a);
 
 	for (int A = 0; A < 10; A++) {
-		//(¶W¹L Z ,­ì¥»¤p©óZ) - 26
+		//(Â¶WÂ¹L Z ,Â­Ã¬Â¥Â»Â¤pÂ©Ã³Z) - 26
 		if ((x[A] + a) > 40 && x[A] < 41)x[A] -= 26;
 		else if((x[A]+a)>72)x[A] -= 26;
 		x[A] =x[A]+50+a;
