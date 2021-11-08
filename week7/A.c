@@ -2,8 +2,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 int main() {
-    float a, b, c, d;
-    scanf("%f%f%f%f", &a, &b, &c, &d);
+    double a, b, c, d;
+    scanf("%lf%lf%lf%lf", &a, &b, &c, &d);
     //printf("%f\n%f\n%f\n%f\n", a, b, c, d);
     int sum = (a + b + c) * 1000000,D = d * 1000000;
     printf("%d\n%d", sum, D);
