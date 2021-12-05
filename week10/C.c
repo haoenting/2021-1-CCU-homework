@@ -31,9 +31,12 @@ Never gonna run around and desert you
 Never gonna make you cry
 Never gonna say goodbye
 Never gonna tell a lie and hurt you
+34
 
 Once upon a time, an enormous dragon appeared...!
 It came with disaster, and left with the princess.
+17
 
 Uh,oh...
+2
 */
