@@ -3,19 +3,18 @@
 #include<stdlib.h>
 #include<string.h>
 #include<ctype.h>
-char str[1000][100], tmp[100];
+char str[1010][105], tmp[105];
 int main() {
-    int x=0,num=0;
-    int sum=1;
-    while (scanf("%s",str[num]) != EOF) { 
+    int num = 0; //輸入直到EOF
+    while (scanf("%s", str[num]) != EOF) {
+        int x = 0;
         while (str[num][x] != NULL) {
             str[num][x] = tolower(str[num][x]);
             x++;
         }
-        x = 0;
-        num++;       
+        num++;
     }
-    for (int a = 0; a < num; a++) {
+    for (int a = 0; a < num; a++) {  // 排序
         for (int b = 0; b < num - a; b++) {
             if (strcmp(str[b], str[b + 1]) > 0) {
                 strcpy(tmp, str[b]);
@@ -24,12 +23,14 @@ int main() {
             }
         }
     }
+
+    int sum = 1;
     for (int c = 1; c <= num; c++) {
-        if (strcmp(str[c], str[c+1]) == 0) {
+        if (strcmp(str[c], str[c + 1]) == 0) {
             sum++;
         }
         else {
-            printf("%s %d\n", str[c], sum );
+            printf("%s %d\n", str[c], sum);
             sum = 1;
         }
     }
