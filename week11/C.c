@@ -4,9 +4,9 @@
 #include<string.h>
 int main() {
     char k[1005];
-    long long int t;
+    unsigned long long int t;
     scanf("%s", k);
-    while (scanf("%lld", &t) != EOF){
+    while (scanf("%llu", &t) != EOF){
         char m[1005];
         int num[20],a=0,b=0; 
         while (t != 0) {
@@ -19,12 +19,18 @@ int main() {
         }
         a--;
         b = 0;
+        int count = 0;
         while (a >= 0) {
            m[a] ^= k[b];
             printf("%c",m[a]);
             b++;
             a--;
             if (k[b] == NULL)b = 0;
+            count++;
+        }
+        while ((count-1) % 4 == 0) {
+            printf("x");
+            count++;
         }
     }
     // a b c d e f a b kbar
